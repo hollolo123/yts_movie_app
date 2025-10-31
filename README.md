@@ -81,3 +81,25 @@ Button
 ```
 npm i styled-components
 ```
+
+pakage.json
+```
+"homepage": "https://hollolo123.github.io"
+```
+
+
+vite.config.js  :: base : "/yts_movie_app/"
+main.jsx :: <BrowserRouter basename='/yts_movie_app'>
+
+
+npm i gh-pages --save-dev
+
+pakage.json
+```
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
+  },
+  ```
